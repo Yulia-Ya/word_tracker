@@ -1,11 +1,11 @@
-import "./App.css";
-import { Word } from "../components/Word/Word";
+
+import { WordsTyping } from '../components/WordsTyping/WordsTyping';
 
 function App() {
   return (
-    <div className="App">
-        <h1>Word counter</h1>
-      <Word />
+    <div>
+    <h1>Word Counter</h1>
+    <WordsTyping/>
     </div>
   );
 }

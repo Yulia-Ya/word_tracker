@@ -19,10 +19,9 @@ export const slice = createSlice({
   reducers: {
     countWord: (state, action: PayloadAction<string>) => {
       state.sign = action.payload;
-
-      state.word = action.payload.split(/\s+/).filter((word) => word.match(/^[\wа-яА-Я]+$/)).length;
+      state.word = action.payload.split(/\s+/).filter(word => word.match(/[a-zA-Zа-яА-Я0-9]+/)).length
       state.letter = action.payload.split("").filter((letter) => /^[\wа-яА-Я]+$/.test(letter)).length;
-      state.punctuation = action.payload.split('').filter(char => /[.,:;!?—]/.test(char)).length;
+      state.punctuation = action.payload.split("").filter((char) => /[.,:;!?—]/.test(char)).length;
     },
   },
 });

@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: rgb(51, 50, 50);
+  border: 2px solid rgb(163, 161, 161);
+  border-radius: 5px;
+  
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  color: rgb(163, 161, 161);
+  background-color: rgb(51, 50, 50);
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  border: none;
+  padding: 12px;
+}
